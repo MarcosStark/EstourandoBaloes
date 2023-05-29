@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-fixed-top" id="barra">
+			<div class="container"> 
+                <div class="navbar-header">
+                
+                    <button type="button" class="navbar-toggle collapsed"
+                            data-toggle="collapse" data-target="#barra-navegacao">
+                        <span class="sr-only">alternar navegação</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a href="index.html">
+                        <img id="img-logo" src="imagens/baloes.jpeg"/>
+                    </a>
+                </div>
+
+                <div id="welcome">
+                  Aproveite bem seu joguinho.</br>Aja com inteligência !!!
+                </div>
+                
+            </div>
+        </nav>
+
+        <div class="col-md-2 margin">
+            <strong>Nível:</strong>
+            <select id="dificultity">
+                <option value="1">Fácil</option>
+                <option value="2">Normal</option>
+                <option value="3">Difícil</option>				
+            </select>
+
+            <button type="button" id="btn_iniciar" "><img src="imagens/iniciar.png"/></button>
+        </div>
+
+        <div id="img-back">
+            <img src="imagens/cenario.png"/>
+        </div>
+      
+
+	<script lang="javascript" src="funcoes_baloes.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	</body>
+
+	
+</html>

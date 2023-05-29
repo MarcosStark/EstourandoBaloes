@@ -1,0 +1,18 @@
+#barra{
+
+}
+
+#img-back{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#welcome{
+    margin-top: 100px;
+    text-align: center;
+    background-color: green;
+}
+
+.img-logo{
+    background-image: url("imagens/baloes.jpeg");
+}
