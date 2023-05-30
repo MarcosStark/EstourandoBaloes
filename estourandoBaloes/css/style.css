@@ -1,18 +1,14 @@
-#barra{
+/*-----------------NAVBAR--------------=-----*/
+#bar{
     background-color: rgb(23, 128, 152);
-}
-
-#img-back{
-    margin-top: 80px;
-    text-align: center;
+    border-bottom: 1px solid white;
 }
 
 #welcome{
     margin-top: 15px;
     text-align: center;
-
 }
-    
+
 #img-logo{
     height: 70px;
     width: 70px;
@@ -20,8 +16,55 @@
 
 #title{
     font-size: 20px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    color: gold;
-    box-shadow: 3px 3px 2px 2px rgb(208, 188, 188), -1px -1px 1px 1px green;
+    font-weight: bold;
+    color: rgb(0, 255, 0);
+    box-shadow: 3px 3px 2px 2px rgb(208, 188, 188), -1px -1px 1px 1px rgb(0, 53, 128);
     border-radius: 5px;
 }
+
+/*-----------------BODY--------------=-----*/
+
+html, body{
+    overflow: hidden;
+    background-color: rgb(139, 178, 185);
+    height: 750px;
+}
+
+
+#img-back{
+    margin: 110px 0px 0px 470px;
+    background: url(images/cenario.png) no-repeat;
+    height: 550px;
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px 2px white, -1px -1px 1px 1px white;
+}
+
+#btn-start{
+    margin-top: 70px;
+    padding-right: 330px;
+}
+
+#img-btn{
+    height: 50px;
+    width: 50px;
+}
+
+button{
+    background: transparent;
+    border: none;
+}
+
+select{
+    border-radius: 3px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+
+/*-----------------FONT--------------=-----*/
+
+.font-style{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+
