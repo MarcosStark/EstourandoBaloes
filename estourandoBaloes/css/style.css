@@ -31,7 +31,7 @@ html, body{
 }
 
 
-#img-back{
+#background{
     margin: 110px 0px 0px 470px;
     background: url(images/cenario.png) no-repeat;
     height: 550px;
@@ -70,4 +70,6 @@ footer{
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
+
+/*-----------------GAME PAGE--------------=-----*/
 

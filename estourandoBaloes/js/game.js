@@ -1,6 +1,6 @@
 function start(){
-    let dificultity = document.getElementById("dificultity").value;
-    time(dificultity)
+    let dificultity = document.querySelector("#dificultity").value;
+    time(dificultity);
 }
 
 function time(value){
