@@ -20,6 +20,13 @@ function time(value){
         gameTime = 30;
     }
 
-    console.log(gameTime);
+    localStorage.setItem("gameTime", gameTime);
+    
 }
+
+(function (){
+
+   let gameTime =  localStorage.getItem("gameTime");
+   console.log(gameTime);
+})();
 
