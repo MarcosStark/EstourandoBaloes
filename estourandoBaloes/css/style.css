@@ -22,7 +22,7 @@
     border-radius: 5px;
 }
 
-/*-----------------BODY--------------=-----*/
+/*-----------------DOCUMENT--------------=-----*/
 
 html, body{
     overflow: hidden;
@@ -60,6 +60,10 @@ select{
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
+footer{
+    margin: 65px 0px 0px 5px;
+    font-size: 10px;
+}
 
 /*-----------------FONT--------------=-----*/
 
