@@ -77,6 +77,15 @@ footer{
     width: 55px;
 }
 
-#img-cro{
-    width: 120px;
+#img-timer{
+    
+    width: 140px;
+    height: 130px;
+    background-image: url("images/cronometro.png");
+}
+
+#timer{
+
+    margin-left: 55px;
+    font-size: 30px;
 }

@@ -26,7 +26,7 @@ function time(value){
 
 (function (){
 
-   let gameTime =  localStorage.getItem("gameTime");
-   console.log(gameTime);
+   document.querySelector("#timer").innerHTML =  localStorage.getItem("gameTime");
+   
 })();
 
