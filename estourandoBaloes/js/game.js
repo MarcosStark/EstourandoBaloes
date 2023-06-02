@@ -41,7 +41,9 @@ function createBalloons(qtd_baloes) {
     for(var i = 1; i <= qtd_baloes; i++){
     var balloon = document.createElement("img"); // Cria o elemento img na div do id "cenario"
     balloon.src = "css/images/balao_azul_pequeno.png";
-    document.getElementById("game").appendChild(balloon);
+    balloon.style.margin = "8px";
+    balloon.style.paddingTop = "15px";
+    document.querySelector("#background").appendChild(balloon);
     
     }
 }
