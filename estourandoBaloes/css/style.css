@@ -89,3 +89,8 @@ footer{
     margin-left: 55px;
     font-size: 30px;
 }
+
+td{
+
+    border: 3px solid rgb(239, 239, 239);
+}
