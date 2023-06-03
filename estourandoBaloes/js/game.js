@@ -1,4 +1,4 @@
-var qtd_baloes = 80;
+var qtd_baloes = 72;
 function start(){
     let dificultity = document.querySelector("#dificultity").value;
     time(dificultity);
