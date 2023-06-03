@@ -4,6 +4,8 @@ function start(){
     time(dificultity);
 }
 
+
+
 function time(value){
 
     let gameTime;
@@ -42,8 +44,19 @@ function createBalloons(qtd_baloes) {
     var balloon = document.createElement("img"); // Cria o elemento img na div do id "cenario"
     balloon.src = "css/images/balao_azul_pequeno.png";
     balloon.style.margin = "8px";
-    balloon.style.paddingTop = "0px";
+    balloon.id = 'b' + i;
+    balloon.onclick = function(){estourar_baloes(this);};
     document.querySelector("#balloons").appendChild(balloon);
     
     }
+}
+
+function estourar_baloes(e){
+
+    var id_balao = e.id;
+
+    document.getElementById(id_balao).setAttribute("onclick", "");
+    document.getElementById(id_balao).src = "css/images/balao_azul_pequeno_estourado.png";
+    return pontuacao(-1);
+
 }
