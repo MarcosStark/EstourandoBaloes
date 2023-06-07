@@ -33,7 +33,7 @@ html, body{
 
 #background{
     margin: 110px 0px 0px 470px;
-    background: url(images/cenario.png) no-repeat;
+    background: url(images/scenery.png) no-repeat;
     height: 550px;
     width: 600px;
     border-radius: 5px;
@@ -82,7 +82,7 @@ footer{
     
     width: 140px;
     height: 130px;
-    background-image: url("images/cronometro.png");
+    background-image: url("images/timer.png");
 }
 
 #timer{

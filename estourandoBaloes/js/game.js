@@ -42,7 +42,7 @@ function createBalloons(qtd_baloes) {
 
     for(var i = 1; i <= qtd_baloes; i++){
     var balloon = document.createElement("img"); // Cria o elemento img na div do id "cenario"
-    balloon.src = "css/images/balao_azul_pequeno.png";
+    balloon.src = "css/images/small_blue_balloon.png";
     balloon.style.margin = "8px";
     balloon.id = 'b' + i;
     balloon.onclick = function(){estourar_baloes(this);};
@@ -56,6 +56,6 @@ function estourar_baloes(e){
     var id_balao = e.id;
 
     document.getElementById(id_balao).setAttribute("onclick", "");
-    document.getElementById(id_balao).src = "css/images/balao_azul_pequeno_estourado.png";
+    document.getElementById(id_balao).src = "css/images/small_blue_balloon_burst.png";
 
 }
