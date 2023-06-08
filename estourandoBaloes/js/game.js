@@ -92,6 +92,8 @@ function score(scr){
 
     document.getElementById("whole-balloons").innerHTML = whole_balloons;
     document.getElementById("popped-balloons").innerHTML = popped_balloons;
+
+    victory(whole_balloons);
 }
 
 function gameOver(){
@@ -99,6 +101,14 @@ function gameOver(){
     alert("Fim de jogo! Você não conseguiu estourar todos os balões!"); 
 
 }
+
+function victory(whole_balloons){
+    if(whole_balloons == 0){
+        alert("Parabéns, você venceu o jogo!");
+        stopGame();
+    }
+}
+
 
 function stopGame(){
     clearTimeout(timer_id);
