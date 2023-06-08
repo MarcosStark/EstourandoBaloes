@@ -55,11 +55,12 @@ function createBalloons(qtd_balloons) {
 
 function popBalloons(e){
 
-    var id_balao = e.id;
+    var id_balloon = e.id;
 
-    document.getElementById(id_balao).setAttribute("onclick", "");
-    document.getElementById(id_balao).src = "css/images/small_blue_balloon_burst.png";
+    document.getElementById(id_balloon).setAttribute("onclick", "");
+    document.getElementById(id_balloon).src = "css/images/small_blue_balloon_burst.png";
 
+    return score(-1);
 }
 
 
@@ -76,6 +77,21 @@ function timeCount(time){
     document.getElementById("timer").innerHTML = time;
 
     timer_id = setTimeout("timeCount("+time+")", 1000);
+}
+
+function score(scr){
+    
+    var whole_balloons = document.getElementById("whole-balloons").innerHTML;
+    var popped_balloons = document.getElementById("popped-balloons").innerHTML;
+
+    whole_balloons = parseInt(whole_balloons);
+    popped_balloons = parseInt(popped_balloons);
+    
+    whole_balloons = whole_balloons + scr;
+    popped_balloons = popped_balloons - scr;
+
+    document.getElementById("whole-balloons").innerHTML = whole_balloons;
+    document.getElementById("popped-balloons").innerHTML = popped_balloons;
 }
 
 function gameOver(){
