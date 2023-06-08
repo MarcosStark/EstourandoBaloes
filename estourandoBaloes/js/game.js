@@ -1,5 +1,6 @@
 var qtd_balloons = 72;
 var timer_id = null;
+var time_end;
 
 function start(){
     let dificultity = document.querySelector("#dificultity").value;
@@ -22,7 +23,7 @@ function time(value){
 
     } else {
 
-        gameTime = 30;
+        gameTime = 5;
     }
 
     localStorage.setItem("gameTime", gameTime);
@@ -49,7 +50,7 @@ function createBalloons(qtd_balloons) {
     balloon.id = 'b' + i;
     balloon.onclick = function(){popBalloons(this);};
     document.querySelector("#balloons").appendChild(balloon);
-    
+
     }
 }
 
@@ -57,10 +58,12 @@ function popBalloons(e){
 
     var id_balloon = e.id;
 
-    document.getElementById(id_balloon).setAttribute("onclick", "");
-    document.getElementById(id_balloon).src = "css/images/small_blue_balloon_burst.png";
+    if(time_end != -1){
+        document.getElementById(id_balloon).setAttribute("onclick", "");
+        document.getElementById(id_balloon).src = "css/images/small_blue_balloon_burst.png";
 
-    return score(-1);
+        return score(-1);
+    }
 }
 
 
@@ -71,12 +74,14 @@ function timeCount(time){
     if(time == -1){
         stopGame();
         gameOver();
+        time_end = time;
         return false;
     }
 
     document.getElementById("timer").innerHTML = time;
 
     timer_id = setTimeout("timeCount("+time+")", 1000);
+
 }
 
 function score(scr){
