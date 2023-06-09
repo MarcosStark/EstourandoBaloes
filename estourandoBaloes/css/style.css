@@ -95,3 +95,19 @@ td{
 
     border: 3px solid rgb(239, 239, 239);
 }
+
+#btn-restart{
+
+    border-radius: 7px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    border: 2px solid blue;
+    text-align: center;
+    background-color: aquamarine;
+    color: gray;
+}
+
+#btn-restart:hover{
+    
+    background-color: white;
+    color: black;
+}

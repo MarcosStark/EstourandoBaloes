@@ -36,6 +36,7 @@ function time(value){
 
     document.querySelector("#whole-balloons").innerHTML = qtd_balloons;
     document.querySelector("#popped-balloons").innerHTML = 0;
+
     createBalloons(qtd_balloons);
     timeCount(localStorage.getItem("gameTime"));
 
@@ -50,7 +51,7 @@ function createBalloons(qtd_balloons) {
     balloon.id = 'b' + i;
     balloon.onclick = function(){popBalloons(this);};
     document.querySelector("#balloons").appendChild(balloon);
-
+    document.getElementById("btn-restart").onclick = function(){restart(this);};
     }
 }
 
@@ -114,6 +115,15 @@ function victory(whole_balloons){
     }
 }
 
+function restart(e){
+
+    var id_balloon = e.id;
+    document.getElementById(id_balloon).setAttribute("");
+    document.getElementById(id_balloon).src = "css/images/small_blue_balloon.png";
+
+     return score(-1);
+
+}
 
 function stopGame(){
     clearTimeout(timer_id);
