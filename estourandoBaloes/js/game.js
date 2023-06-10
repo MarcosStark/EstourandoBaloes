@@ -51,7 +51,7 @@ function createBalloons(qtd_balloons) {
     balloon.id = 'b' + i;
     balloon.onclick = function(){popBalloons(this);};
     document.querySelector("#balloons").appendChild(balloon);
-    document.getElementById("btn-restart").onclick = function(){restart(this);};
+    document.querySelector("#btn-restart").addEventListener("click", restart);
     }
 }
 
@@ -115,15 +115,16 @@ function victory(whole_balloons){
     }
 }
 
-function restart(e){
+function restart(){
 
-    var id_balloon = e.id;
-    document.getElementById(id_balloon).setAttribute("");
-    document.getElementById(id_balloon).src = "css/images/small_blue_balloon.png";
+    for(i = 1; i <= 72; i++){
+        
+        var id_balloon = "b" + i;
+        document.getElementById(id_balloon).src = "css/images/small_blue_balloon.png";
+      
+    }
+}   
 
-     return score(-1);
-
-}
 
 function stopGame(){
     clearTimeout(timer_id);
