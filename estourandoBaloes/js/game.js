@@ -1,6 +1,7 @@
 var qtd_balloons = 72;
 var timer_id = null;
 var time_end;
+var time_restart;
 
 function start(){
     let dificultity = document.querySelector("#dificultity").value;
@@ -23,7 +24,7 @@ function time(value){
 
     } else {
 
-        gameTime = 5;
+        gameTime = 100;
     }
 
     localStorage.setItem("gameTime", gameTime);
@@ -38,7 +39,11 @@ function time(value){
     document.querySelector("#popped-balloons").innerHTML = 0;
 
     createBalloons(qtd_balloons);
-    timeCount(localStorage.getItem("gameTime"));
+    
+    time_restart = localStorage.getItem("gameTime");
+    timeCount(time_restart);
+
+    document.querySelector("#btn-restart").addEventListener("click", restart);
 
 })();
 
@@ -51,7 +56,7 @@ function createBalloons(qtd_balloons) {
     balloon.id = 'b' + i;
     balloon.onclick = function(){popBalloons(this);};
     document.querySelector("#balloons").appendChild(balloon);
-    document.querySelector("#btn-restart").addEventListener("click", restart);
+
     }
 }
 
@@ -116,7 +121,7 @@ function victory(whole_balloons){
     }
 }
 
-function restart(e){
+function restart(){
 
     for(i = 1; i <= 72; i++){
 
@@ -124,9 +129,12 @@ function restart(e){
 
             document.getElementById(id_balloon).src = "css/images/small_blue_balloon.png";
         }
+
+    stopGame(); 
+    timeCount(time_restart);
 }
 
-
+    
 
 function stopGame(){
     clearTimeout(timer_id);
