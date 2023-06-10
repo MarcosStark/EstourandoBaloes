@@ -116,17 +116,16 @@ function victory(whole_balloons){
     }
 }
 
-function restart(){
+function restart(e){
 
     for(i = 1; i <= 72; i++){
-        
-        var id_balloon = "b" + i;
-        document.getElementById(id_balloon).src = "css/images/small_blue_balloon.png";
-      
-    }
 
-    timeCount(localStorage.getItem("gameTime"));
-}   
+        let id_balloon = "b" + i;
+
+            document.getElementById(id_balloon).src = "css/images/small_blue_balloon.png";
+        }
+}
+
 
 
 function stopGame(){
