@@ -70,8 +70,6 @@ function popBalloons(e){
 
 function timeCount(time){
 
-    time = time - 1;
-
     if(time == -1){
         stopGame();
         gameOver();
@@ -81,7 +79,10 @@ function timeCount(time){
 
     document.getElementById("timer").innerHTML = time;
 
+    time = time - 1;
+
     timer_id = setTimeout("timeCount("+time+")", 1000);
+
 
 }
 
@@ -123,6 +124,8 @@ function restart(){
         document.getElementById(id_balloon).src = "css/images/small_blue_balloon.png";
       
     }
+
+    timeCount(localStorage.getItem("gameTime"));
 }   
 
 
