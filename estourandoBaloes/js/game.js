@@ -65,7 +65,7 @@ function popBalloons(e){
     var id_balloon = e.id;
 
     if(time_end != -1){
-        document.getElementById(id_balloon).setAttribute("onclick", "");
+        //document.getElementById(id_balloon).setAttribute("onclick", "");
         document.getElementById(id_balloon).src = "css/images/small_blue_balloon_burst.png";
 
         return score(-1);
@@ -136,8 +136,6 @@ function restart(){
     stopGame();  
     timeCount(time_restart);
 }
-
-    
 
 function stopGame(){
     clearTimeout(timer_id);
