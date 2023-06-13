@@ -39,6 +39,7 @@ html, body{
     border-radius: 5px;
     box-shadow: 3px 3px 2px 2px white, -1px -1px 1px 1px white;
     padding-top: 30px;
+
 }
 
 #btn-start{
@@ -112,18 +113,52 @@ td{
     color: black;
 }
 
-.modal-window{
+.modal-window1{
 
     width: 100vw;
     height: 100vh;
     position: relative;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.415);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     z-index: 999;
+
+
 }
 
+.modal-style{
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    border-radius: 15px;
+    
+}
 
+.modal-window2{
+
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    
+}
+
+.modal-window1 > div{
+
+    border: 2px solid gold;
+}
+
+.modal-window2 > div{
+
+    border: 2px solid rgb(161, 40, 40);
+}
