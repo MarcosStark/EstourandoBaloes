@@ -113,7 +113,7 @@ td{
     color: black;
 }
 
-.modal-window1{
+#modal-victory{
 
     background: url(images/victoryBallons2.jpg) no-repeat;
     width: 100vw;
@@ -121,7 +121,7 @@ td{
     position: relative;
     top: 0;
     left: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     z-index: 999;
@@ -141,7 +141,7 @@ td{
     
 }
 
-.modal-window2{
+#modal-defeat{
 
     width: 100vw;
     height: 100vh;

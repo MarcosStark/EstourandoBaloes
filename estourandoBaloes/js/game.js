@@ -1,4 +1,4 @@
-var qtd_balloons = 72;
+var qtd_balloons = 10;
 var timer_id = null;
 var time_end;
 var time_restart;
@@ -115,11 +115,10 @@ function gameOver(){
 }
 
 function victory(whole_balloons){
+  
     if(whole_balloons == 0){
         
-        document.querySelector("#modal-victory").addEventListener(function(){
-            show: true;
-        });
+        document.getElementById("modal-victory").style.display = "flex";
         stopGame();
     }
 }
