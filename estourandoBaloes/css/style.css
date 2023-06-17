@@ -115,16 +115,18 @@ td{
 
 .modal-window1{
 
+    background: url(images/victoryBallons2.jpg) no-repeat;
     width: 100vw;
     height: 100vh;
     position: relative;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     z-index: 999;
-
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 20px;
 
 }
 
@@ -150,6 +152,7 @@ td{
     align-items: center;
     justify-content: center;
     z-index: 999;
+    font-family: Comic Sans MS, Comic Sans, cursive;
     
 }
 
