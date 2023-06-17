@@ -110,7 +110,7 @@ function score(scr){
 
 function gameOver(){
   
-    alert("Fim de jogo! Você não conseguiu estourar todos os balões!"); 
+    document.getElementById("modal-defeat").style.display = "flex";
 
 }
 
