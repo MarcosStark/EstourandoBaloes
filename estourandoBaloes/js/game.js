@@ -116,7 +116,10 @@ function gameOver(){
 
 function victory(whole_balloons){
     if(whole_balloons == 0){
-        alert("Parabéns, você venceu o jogo!");
+        
+        document.querySelector("#modal-victory").addEventListener(function(){
+            show: true;
+        });
         stopGame();
     }
 }
