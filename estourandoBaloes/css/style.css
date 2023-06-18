@@ -143,6 +143,7 @@ td{
 
 #modal-defeat{
 
+    background: url(images/defeatBalloons2.jpg);
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -153,6 +154,7 @@ td{
     justify-content: center;
     z-index: 999;
     font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 20px;
     
 }
 
