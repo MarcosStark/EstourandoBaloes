@@ -155,11 +155,19 @@ td{
     z-index: 999;
     font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 20px;
-    border: 2px solid rgb(161, 40, 40);
+    box-shadow: 3px 3px 2px 2px white, -1px -1px 1px 1px white;
     margin-top: 150px;
     margin-right: 20px;
     
 }
+
+.text-defeat{
+
+    color: gold;
+    text-shadow: -2px -2px green, 1px 1px blue;
+}
+
+
 
 
 
