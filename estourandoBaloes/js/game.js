@@ -1,4 +1,4 @@
-var qtd_balloons = 72;
+var qtd_balloons = 70;
 var timer_id = null;
 var time_end;
 var time_restart;

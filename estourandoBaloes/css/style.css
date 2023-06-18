@@ -32,7 +32,7 @@ html, body{
 
 
 #background{
-    margin: 110px 0px 0px 470px;
+    margin: 110px 0px 0px 300px;
     background: url(images/scenery.png) no-repeat;
     height: 550px;
     width: 600px;
@@ -62,8 +62,10 @@ select{
 }
 
 footer{
-    margin: 65px 0px 0px 5px;
+
+    margin: 700px 0px 0px 5px;
     font-size: 10px;
+    
 }
 
 /*-----------------FONT--------------=-----*/
@@ -143,28 +145,22 @@ td{
 
 #modal-defeat{
 
-    background: url(images/defeatBalloons2.jpg);
-    width: 60%;
-    height: 60%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background: url(images/defeatBalloons2.jpg) no-repeat;
+    background-size: 100%;
+    width: 30%;
+    height: 30%;
     display: none;
     align-items: center;
     justify-content: center;
     z-index: 999;
     font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 20px;
-    margin: 150px;
+    border: 2px solid rgb(161, 40, 40);
+    margin-top: 150px;
+    margin-right: 20px;
     
 }
 
-.modal-window1 > div{
 
-    border: 2px solid gold;
-}
 
-.modal-window2 > div{
 
-    border: 2px solid rgb(161, 40, 40);
-}
