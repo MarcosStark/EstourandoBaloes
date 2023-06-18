@@ -116,8 +116,8 @@ td{
 #modal-victory{
 
     background: url(images/victoryBallons2.jpg) no-repeat;
-    width: 100vw;
-    height: 100vh;
+    width: 60%;
+    height: 60%;
     position: relative;
     top: 0;
     left: 0;
@@ -144,9 +144,9 @@ td{
 #modal-defeat{
 
     background: url(images/defeatBalloons2.jpg);
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+    width: 60%;
+    height: 60%;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
@@ -155,6 +155,7 @@ td{
     z-index: 999;
     font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 20px;
+    margin: 150px;
     
 }
 

@@ -124,7 +124,7 @@ function victory(whole_balloons){
 }
 
 function restart(){
-
+    document.getElementById("modal-defeat").style.display = "none";
     for(i = 1; i <= 72; i++){
 
         let id_balloon = "b" + i;
@@ -137,6 +137,9 @@ function restart(){
     document.getElementById("popped-balloons").innerHTML = 0;
     stopGame();  
     timeCount(time_restart);
+    
+
+    
 }
 
 function stopGame(){
