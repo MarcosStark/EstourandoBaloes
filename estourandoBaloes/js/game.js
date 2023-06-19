@@ -1,4 +1,4 @@
-var qtd_balloons = 5;
+var qtd_balloons = 70;
 var timer_id = null;
 var time_end;
 var time_restart;
@@ -133,7 +133,7 @@ function restart(){
         }
 
 
-    document.getElementById("whole-balloons").innerHTML = 72;
+    document.getElementById("whole-balloons").innerHTML = 70;
     document.getElementById("popped-balloons").innerHTML = 0;
     stopGame();  
     timeCount(time_restart);
