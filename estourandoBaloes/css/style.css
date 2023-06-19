@@ -118,8 +118,9 @@ td{
 #modal-victory{
 
     background: url(images/victoryBallons2.jpg) no-repeat;
-    width: 60%;
-    height: 60%;
+    background-size: 100%;
+    width: 30%;
+    height: 30%;
     position: relative;
     top: 0;
     left: 0;
@@ -127,8 +128,10 @@ td{
     align-items: center;
     justify-content: center;
     z-index: 999;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    font-size: 20px;
+    margin-top: 150px;
+    margin-right: 20px;
+    color: green;
+    text-shadow: -0px -0px white, 2px 2px gold;
 
 }
 
@@ -153,18 +156,19 @@ td{
     align-items: center;
     justify-content: center;
     z-index: 999;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    font-size: 20px;
     box-shadow: 3px 3px 2px 2px white, -1px -1px 1px 1px white;
     margin-top: 150px;
     margin-right: 20px;
+    color: white;
+    text-shadow: -0px -0px white, 2px 2px black;
     
 }
 
-.text-defeat{
+.text-result{
 
-    color: gold;
-    text-shadow: -2px -2px green, 1px 1px blue;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 25px;
+
 }
 
 
