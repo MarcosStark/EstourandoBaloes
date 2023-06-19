@@ -124,7 +124,10 @@ function victory(whole_balloons){
 }
 
 function restart(){
+
     document.getElementById("modal-defeat").style.display = "none";
+    document.getElementById("modal-victory").style.display = "none";
+
     for(i = 1; i <= 70; i++){
 
         let id_balloon = "b" + i;
