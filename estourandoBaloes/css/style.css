@@ -74,12 +74,7 @@ select{
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
-footer{
 
-    margin: 700px 0px 0px 5px;
-    font-size: 10px;
-    
-}
 
 /*-----------------FONT--------------=-----*/
 
@@ -184,6 +179,21 @@ td{
     font-size: 25px;
 
 }
+
+#footer-game{
+
+    margin: 700px 0px 0px 5px;
+    font-size: 10px;
+    
+}
+
+#footer-index{
+
+    margin: 40px 0px 0px 5px;
+    font-size: 10px;
+    
+}
+
 
 
 
