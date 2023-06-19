@@ -1,4 +1,4 @@
-var qtd_balloons = 70;
+var qtd_balloons = 5;
 var timer_id = null;
 var time_end;
 var time_restart;
@@ -24,7 +24,7 @@ function time(value){
 
     } else {
 
-        gameTime = 3;
+        gameTime = 30;
     }
 
     localStorage.setItem("gameTime", gameTime);
