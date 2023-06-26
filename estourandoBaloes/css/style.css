@@ -25,9 +25,11 @@
 /*-----------------DOCUMENT--------------=-----*/
 
 html, body{
+    
     overflow: hidden;
     background-color: rgb(139, 178, 185);
-    height: 750px;
+    height: 100vh;
+    width: 100vw;
 }
 
 
@@ -51,6 +53,7 @@ html, body{
 #background-game{
 
     margin: 110px 0px 0px 300px;
+    border: 2px solid green;
 
 }
 
@@ -192,6 +195,18 @@ td{
     margin: 40px 0px 0px 5px;
     font-size: 10px;
     
+}
+
+#teste{
+    border: 1px solid red;
+}
+
+#teste2{
+    border: 2px solid blue;
+}
+
+#game{
+    border: 3px solid black;
 }
 
 
