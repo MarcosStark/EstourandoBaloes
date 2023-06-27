@@ -2,6 +2,7 @@ var qtd_balloons = 70;
 var timer_id = null;
 var time_end;
 var time_restart;
+var consolidated_score;
 
 function start(){
     let dificultity = document.querySelector("#dificultity").value;
@@ -106,7 +107,8 @@ function score(scr){
 
     document.getElementById("whole-balloons").innerHTML = whole_balloons;
     document.getElementById("popped-balloons").innerHTML = popped_balloons;
-    document.getElementById("score").innerHTML = popped_balloons;
+    console.log(popped_balloons);
+    consolidated_score =  popped_balloons;
 
     victory(whole_balloons);
 }
@@ -114,7 +116,6 @@ function score(scr){
 function gameOver(){
   
     document.getElementById("modal-defeat").style.display = "flex";
-
 }
 
 function victory(whole_balloons){
@@ -143,6 +144,7 @@ function restart(){
     document.getElementById("popped-balloons").innerHTML = 0;
     stopGame();  
     timeCount(time_restart);
+    time_end = null;
     
 
     
@@ -150,4 +152,5 @@ function restart(){
 
 function stopGame(){
     clearTimeout(timer_id);
+    document.getElementById("score").innerHTML = consolidated_score;
 }
