@@ -3,6 +3,7 @@ var timer_id = null;
 var time_end;
 var time_restart;
 var consolidated_score;
+var qtd_games = 1;
 
 function start(){
     let dificultity = document.querySelector("#dificultity").value;
@@ -145,12 +146,42 @@ function restart(){
     stopGame();  
     timeCount(time_restart);
     time_end = null;
-    
 
-    
+    qtd_games = qtd_games + 1;
+    console.log("01: ", qtd_games);
+     
 }
 
 function stopGame(){
+
     clearTimeout(timer_id);
-    document.getElementById("score").innerHTML = consolidated_score;
+    consolidatedScore();
+}
+
+function consolidatedScore(){
+
+    switch(qtd_games){
+
+        case 1:
+        document.getElementById("score1").innerHTML = consolidated_score;
+        break;
+
+        case 2:
+        document.getElementById("score2").innerHTML = consolidated_score;
+        break;
+
+        case 3:
+        document.getElementById("score3").innerHTML = consolidated_score;
+        break;
+
+        case 4:
+        document.getElementById("score4").innerHTML = consolidated_score;
+        break;
+
+        case 5:
+        document.getElementById("score5").innerHTML = consolidated_score;
+        break;
+
+        default:
+    };
 }
