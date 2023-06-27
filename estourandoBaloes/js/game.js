@@ -70,6 +70,8 @@ function popBalloons(e){
 
         return score(-1);
     }
+
+
 }
 
 
@@ -104,6 +106,7 @@ function score(scr){
 
     document.getElementById("whole-balloons").innerHTML = whole_balloons;
     document.getElementById("popped-balloons").innerHTML = popped_balloons;
+    document.getElementById("score").innerHTML = popped_balloons;
 
     victory(whole_balloons);
 }
