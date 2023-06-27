@@ -207,6 +207,21 @@ td{
     margin-top: 120px;
 }
 
+.score-style{
+
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    padding: 5px;
+    color: white; 
+}
+
+#score-head{
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
 
 
 
