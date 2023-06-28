@@ -117,6 +117,7 @@ function score(scr){
 function gameOver(){
   
     document.getElementById("modal-defeat").style.display = "flex";
+    consolidatedScore();
 }
 
 function victory(whole_balloons){
