@@ -212,6 +212,7 @@ td{
     font-family: Comic Sans MS, Comic Sans, cursive;
     padding: 5px;
     color: white; 
+    
 }
 
 #score-head{
@@ -220,6 +221,9 @@ td{
     font-weight: bold;
 }
 
+#score1{
+    background-color: gold;
+}
 
 
 

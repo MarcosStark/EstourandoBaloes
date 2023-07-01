@@ -191,6 +191,10 @@ function consolidatedScore(){
         document.getElementById("score5").innerHTML = consolidated_score;
         break;
 
+        if(consolidated_score == 1){
+            console.log("ok");
+        }
+
         default:
     };
 }
