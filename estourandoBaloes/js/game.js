@@ -173,6 +173,12 @@ function consolidatedScore(){
 
         case 1:
         document.getElementById("score1").innerHTML = consolidated_score;
+
+        if(consolidated_score == 70){
+            
+            var r = document.querySelector(".result-style");
+            r.style.background-color = "gold";
+        
         break;
 
         case 2:
@@ -190,10 +196,6 @@ function consolidatedScore(){
         case 5:
         document.getElementById("score5").innerHTML = consolidated_score;
         break;
-
-        if(consolidated_score == 1){
-            console.log("ok");
-        }
 
         default:
     };
