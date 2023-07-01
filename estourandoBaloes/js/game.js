@@ -4,6 +4,7 @@ var time_end;
 var time_restart;
 var consolidated_score;
 var qtd_games = 1;
+var teste2 = 0;
 
 function start(){
     let dificultity = document.querySelector("#dificultity").value;
@@ -62,20 +63,47 @@ function createBalloons(qtd_balloons) {
     }
 }
 
+var teste = [];
+
 function popBalloons(e){
 
     var id_balloon = e.id;
 
     if(time_end != -1){
-       
-        document.getElementById(id_balloon).src = "css/images/small_blue_balloon_burst.png";
+  
+        //console.log("ballon: " + id_balloon);
 
-        return score(-1);
+        console.log(teste.indexOf(id_balloon));
+
+        /*for(i = 0; i < 70; i++){
+
+            if(teste[i] == id_balloon || teste[i] == undefined){
+
+                document.getElementById(id_balloon).src = "css/images/small_blue_balloon_burst.png";
+
+            } else {
+                
+                console.log("ok");
+                document.getElementById(id_balloon).src = "css/images/small_blue_balloon_burst.png";
+                teste[teste2] = id_balloon;            
+                teste2 = teste2 + 1;
+                return score(-1);
+            }
+        }*/
+
+        if(teste.indexOf(id_balloon) == -1){
+
+            document.getElementById(id_balloon).src = "css/images/small_blue_balloon_burst.png";
+            score(-1);
+        } else {
+            console.log("ok");
+        }
+
+        teste[teste2] = id_balloon;            
+        teste2 = teste2 + 1;
     }
 
-
 }
-
 
 function timeCount(time){
 
