@@ -169,6 +169,12 @@ function stopGame(){
 
 function consolidatedScore(){
 
+    let score1 = document.getElementById("score1");
+    let score2 = document.getElementById("score2");
+    let score3 = document.getElementById("score3");
+    let score4 = document.getElementById("score4");
+    let score5 = document.getElementById("score5");
+
     let r1 = document.querySelector("#result-style1");
     let r2 = document.querySelector("#result-style2");
     let r3 = document.querySelector("#result-style3");
@@ -179,39 +185,33 @@ function consolidatedScore(){
 
         case 1:
 
-        let score1 = document.getElementById("score1");
-
-        if(consolidated_score == 5){
-       
-            r1.style.backgroundColor = "gold";
-            document.getElementById("score1").innerHTML = "VITÓRIA";
-        } else {
-            
-            r1.style.backgroundColor = "gray";
-            score1.innerHTML = consolidated_score;
-        }
+            if(consolidated_score == 5){
+        
+                r1.style.backgroundColor = "gold";
+                document.getElementById("score1").innerHTML = "VITÓRIA";
+            } else {
+                
+                r1.style.backgroundColor = "gray";
+                score1.innerHTML = consolidated_score;
+            }
         break;
 
         case 2:
         
-        let score2 = document.getElementById("score2");
+            if(consolidated_score == 5){
 
-        if(consolidated_score == 5){
-
-            r2.style.backgroundColor = "gold";
-            document.getElementById("score2").innerHTML = "VITÓRIA";
-        } else {
-            
-            r2.style.backgroundColor = "gray";
-            score2.innerHTML = consolidated_score;
-        }
-        break;
+                r2.style.backgroundColor = "gold";
+                document.getElementById("score2").innerHTML = "VITÓRIA";
+            } else {
+                
+                r2.style.backgroundColor = "gray";
+                score2.innerHTML = consolidated_score;
+            }
+            break;
 
         case 3:
         
-        let score3 = document.getElementById("score3");
-
-        if(consolidated_score == 5){
+        if(consolidated_score == 70){
        
             r3.style.backgroundColor = "gold";
             document.getElementById("score3").innerHTML = "VITÓRIA";
@@ -224,9 +224,7 @@ function consolidatedScore(){
 
         case 4:
         
-        let score4 = document.getElementById("score5");
-
-        if(consolidated_score == 5){
+        if(consolidated_score == 70){
        
             r4.style.backgroundColor = "gold";
             document.getElementById("score4").innerHTML = "VITÓRIA";
@@ -239,9 +237,7 @@ function consolidatedScore(){
 
         case 5:
         
-        let score5 = document.getElementById("score5");
-
-        if(consolidated_score == 5){
+        if(consolidated_score == 70){
        
             r5.style.backgroundColor = "gold";
             document.getElementById("score5").innerHTML = "VITÓRIA";
