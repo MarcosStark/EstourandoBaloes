@@ -184,26 +184,69 @@ function consolidatedScore(){
             document.getElementById("score1").innerHTML = "VITÓRIA";
         } else {
             
-            //score1.style.textAlign = center;
             r.style.backgroundColor = "gray";
             score1.innerHTML = consolidated_score;
         }
         break;
 
         case 2:
-        document.getElementById("score2").innerHTML = consolidated_score;
+        
+        let score2 = document.getElementById("score2");
+
+        if(consolidated_score == 5){
+       
+            r.style.backgroundColor = "gold";
+            document.getElementById("score2").innerHTML = "VITÓRIA";
+        } else {
+            
+            r.style.backgroundColor = "gray";
+            score2.innerHTML = consolidated_score;
+        }
         break;
 
         case 3:
-        document.getElementById("score3").innerHTML = consolidated_score;
+        
+        let score3 = document.getElementById("score3");
+
+        if(consolidated_score == 5){
+       
+            r.style.backgroundColor = "gold";
+            document.getElementById("score3").innerHTML = "VITÓRIA";
+        } else {
+            
+            r.style.backgroundColor = "gray";
+            score1.innerHTML = consolidated_score;
+        }
         break;
 
         case 4:
-        document.getElementById("score4").innerHTML = consolidated_score;
+        
+        let score4 = document.getElementById("score5");
+
+        if(consolidated_score == 5){
+       
+            r.style.backgroundColor = "gold";
+            document.getElementById("score5").innerHTML = "VITÓRIA";
+        } else {
+            
+            r.style.backgroundColor = "gray";
+            score1.innerHTML = consolidated_score;
+        }
         break;
 
         case 5:
-        document.getElementById("score5").innerHTML = consolidated_score;
+        
+        let score5 = document.getElementById("score5");
+
+        if(consolidated_score == 5){
+       
+            r.style.backgroundColor = "gold";
+            document.getElementById("score5").innerHTML = "VITÓRIA";
+        } else {
+            
+            r.style.backgroundColor = "gray";
+            score1.innerHTML = consolidated_score;
+        }
         break;
 
         default:
