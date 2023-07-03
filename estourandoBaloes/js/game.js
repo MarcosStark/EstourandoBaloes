@@ -169,8 +169,11 @@ function stopGame(){
 
 function consolidatedScore(){
 
-    
-    let r = document.querySelector(".result-style");
+    let r1 = document.querySelector("#result-style1");
+    let r2 = document.querySelector("#result-style2");
+    let r3 = document.querySelector("#result-style3");
+    let r4 = document.querySelector("#result-style4");
+    let r5 = document.querySelector("#result-style5");
 
     switch(qtd_games){
 
@@ -180,11 +183,11 @@ function consolidatedScore(){
 
         if(consolidated_score == 5){
        
-            r.style.backgroundColor = "gold";
+            r1.style.backgroundColor = "gold";
             document.getElementById("score1").innerHTML = "VITÓRIA";
         } else {
             
-            r.style.backgroundColor = "gray";
+            r1.style.backgroundColor = "gray";
             score1.innerHTML = consolidated_score;
         }
         break;
@@ -194,12 +197,12 @@ function consolidatedScore(){
         let score2 = document.getElementById("score2");
 
         if(consolidated_score == 5){
-       
-            r.style.backgroundColor = "gold";
+
+            r2.style.backgroundColor = "gold";
             document.getElementById("score2").innerHTML = "VITÓRIA";
         } else {
             
-            r.style.backgroundColor = "gray";
+            r2.style.backgroundColor = "gray";
             score2.innerHTML = consolidated_score;
         }
         break;
@@ -210,11 +213,11 @@ function consolidatedScore(){
 
         if(consolidated_score == 5){
        
-            r.style.backgroundColor = "gold";
+            r3.style.backgroundColor = "gold";
             document.getElementById("score3").innerHTML = "VITÓRIA";
         } else {
             
-            r.style.backgroundColor = "gray";
+            r3.style.backgroundColor = "gray";
             score3.innerHTML = consolidated_score;
         }
         break;
@@ -225,11 +228,11 @@ function consolidatedScore(){
 
         if(consolidated_score == 5){
        
-            r.style.backgroundColor = "gold";
-            document.getElementById("score5").innerHTML = "VITÓRIA";
+            r4.style.backgroundColor = "gold";
+            document.getElementById("score4").innerHTML = "VITÓRIA";
         } else {
             
-            r.style.backgroundColor = "gray";
+            r4.style.backgroundColor = "gray";
             score4.innerHTML = consolidated_score;
         }
         break;
@@ -240,11 +243,11 @@ function consolidatedScore(){
 
         if(consolidated_score == 5){
        
-            r.style.backgroundColor = "gold";
+            r5.style.backgroundColor = "gold";
             document.getElementById("score5").innerHTML = "VITÓRIA";
         } else {
             
-            r.style.backgroundColor = "gray";
+            r5.style.backgroundColor = "gray";
             score5.innerHTML = consolidated_score;
         }
         break;
