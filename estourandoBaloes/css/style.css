@@ -210,20 +210,18 @@ td{
 .score-style{
 
     font-family: Comic Sans MS, Comic Sans, cursive;
-    padding: 5px;
-    color: white; 
+    padding: 5px 0px 5px 35px;
+    color: white;
     
 }
 
 #score-head{
 
+    padding: 5px;
     font-size: 15px;
     font-weight: bold;
 }
 
-#score1{
-    background-color: gold;
-}
 
 
 
