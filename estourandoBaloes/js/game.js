@@ -215,7 +215,7 @@ function consolidatedScore(){
         } else {
             
             r.style.backgroundColor = "gray";
-            score1.innerHTML = consolidated_score;
+            score3.innerHTML = consolidated_score;
         }
         break;
 
@@ -230,7 +230,7 @@ function consolidatedScore(){
         } else {
             
             r.style.backgroundColor = "gray";
-            score1.innerHTML = consolidated_score;
+            score4.innerHTML = consolidated_score;
         }
         break;
 
@@ -245,7 +245,7 @@ function consolidatedScore(){
         } else {
             
             r.style.backgroundColor = "gray";
-            score1.innerHTML = consolidated_score;
+            score5.innerHTML = consolidated_score;
         }
         break;
 
