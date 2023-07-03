@@ -2,7 +2,7 @@ var qtd_balloons = 70;
 var timer_id = null;
 var time_end;
 var time_restart;
-var consolidated_score;
+var consolidated_score = 0;
 var qtd_games = 1;
 var teste2 = 0;
 
@@ -116,9 +116,9 @@ function score(scr){
 
     document.getElementById("whole-balloons").innerHTML = whole_balloons;
     document.getElementById("popped-balloons").innerHTML = popped_balloons;
-    console.log(popped_balloons);
-    consolidated_score =  popped_balloons;
 
+    consolidated_score =  popped_balloons;  
+    
     victory(whole_balloons);
 }
 
