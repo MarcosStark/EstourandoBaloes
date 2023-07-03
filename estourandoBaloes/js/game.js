@@ -185,7 +185,7 @@ function consolidatedScore(){
 
         case 1:
 
-            if(consolidated_score == 5){
+            if(consolidated_score == 70){
         
                 r1.style.backgroundColor = "gold";
                 document.getElementById("score1").innerHTML = "VITÓRIA";
@@ -198,7 +198,7 @@ function consolidatedScore(){
 
         case 2:
         
-            if(consolidated_score == 5){
+            if(consolidated_score == 70){
 
                 r2.style.backgroundColor = "gold";
                 document.getElementById("score2").innerHTML = "VITÓRIA";
