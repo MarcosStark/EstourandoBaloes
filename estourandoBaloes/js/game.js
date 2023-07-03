@@ -169,16 +169,25 @@ function stopGame(){
 
 function consolidatedScore(){
 
+    
+    let r = document.querySelector(".result-style");
+
     switch(qtd_games){
 
         case 1:
-        document.getElementById("score1").innerHTML = consolidated_score;
 
-        if(consolidated_score == 70){
+        let score1 = document.getElementById("score1");
+
+        if(consolidated_score == 5){
+       
+            r.style.backgroundColor = "gold";
+            document.getElementById("score1").innerHTML = "VITÓRIA";
+        } else {
             
-            var r = document.querySelector(".result-style");
-            r.style.background-color = "gold";
-        
+            //score1.style.textAlign = center;
+            r.style.backgroundColor = "gray";
+            score1.innerHTML = consolidated_score;
+        }
         break;
 
         case 2:
